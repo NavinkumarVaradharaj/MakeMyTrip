@@ -110,6 +110,7 @@ public class HomePage extends BaseClass {
 	}
 
 	public void enterReturnCity(String city) throws InterruptedException {
+		searchToCity.click();
 		searchToCity.sendKeys(city);
 		UtilFunctions.ExpWaitForWebelement(firstOption);
 		Thread.sleep(1000);
